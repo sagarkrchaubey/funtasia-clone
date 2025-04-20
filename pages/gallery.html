@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Funtasia Water Park</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet"> <!-- Link main stylesheet -->
+</head>
+<body class="bg-light">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="logo">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/cropped-logo-e1558266650570.png" alt="Funtasia Waterpark Logo">
+                </a>
+                <nav class="hidden md:flex space-x-6 desktop-nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+     <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 shadow-lg z-50 p-5 md:hidden">
+        <div class="flex justify-between items-center mb-6">
+             <a href="../index.html" class="logo">
+                <img src="../assets/images/funtasia-logo-white.png" alt="Funtasia Logo White" class="h-10">
+             </a>
+            <button id="close-menu" class="text-white focus:outline-none">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-2">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="gallery.html" class="nav-link active">Gallery</a>
+            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="page-banner" style="background-image: url('https://funtasiawaterpark.com/wp-content/uploads/2022/02/t1.jpeg');">
+        <div class="container mx-auto px-4">
+            <h1>Our Gallery</h1>
+            <p>Explore the excitement and fun at Funtasia Water Park through our photo gallery. See our thrilling slides, relaxing pools, and happy guests!</p>
+        </div>
+        <div class="wave bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-light"></path> <!-- Wave to light background -->
+            </svg>
+        </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h2 class="section-title fun-heading">Explore Our Water Park</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+                <!-- Dynamically generated or static list of images -->
+                <!-- Ensure each div has class 'gallery-img' and contains an img tag -->
+
+                <!-- Gallery Item 1 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2024/03/IMG-20240327-WA0049-1024x768.jpg" alt="Water Park Slide 1" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2022/02/t3.jpeg" alt="Swimming Pool Area" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2022/02/t2.jpeg" alt="Colorful Water Slides" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2022/02/t1.jpeg" alt="Wave Pool Fun" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131207-768x576.jpg" alt="Funtasia Pool Overview" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131156-768x576.jpg" alt="Water Attraction Detail" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 7 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131037-768x576.jpg" alt="Kids Play Structure" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 8 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131026-768x576.jpg" alt="Water Rides View" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 9 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_130958-768x576.jpg" alt="Family Enjoying Waterpark" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 10 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131349-768x576.jpg" alt="Water Fun Activities" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 11 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131316-768x576.jpg" alt="Splash Play Area" class="w-full h-full object-cover">
+                </div>
+                <!-- Gallery Item 12 -->
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md cursor-pointer h-64 content-card p-0">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131125-768x576.jpg" alt="Water Activities Close Up" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section class="section-padding bg-gradient-to-br from-primary-color to-secondary-color text-white wave-container pb-16 md:pb-20 lg:pb-24">
+        <div class="wave top">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill-light"></path>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 relative z-10 pt-16 md:pt-20 lg:pt-24">
+            <div class="text-center mb-12">
+                 <h2 class="text-3xl font-bold text-white mb-2 fun-heading">Fun Facts About Our Park</h2>
+                 <p class="text-lg text-white opacity-80 max-w-xl mx-auto">A few things that make Funtasia special!</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-4">
+                    <div class="bg-white text-primary-color w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:scale-110 transition duration-300">
+                        <i class="fas fa-water text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">4 Pools</h3>
+                    <p class="opacity-90">For different ages and preferences</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="bg-white text-primary-color w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:scale-110 transition duration-300">
+                         <i class="fas fa-ruler-combined text-3xl"></i> <!-- Changed Icon -->
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">1.4 Acres</h3>
+                    <p class="opacity-90">Sprawling area for maximum fun</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="bg-white text-primary-color w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:scale-110 transition duration-300">
+                        <i class="fas fa-users text-3xl"></i> <!-- Changed Icon -->
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">All Ages</h3>
+                    <p class="opacity-90">Activities from toddlers to adults</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="bg-white text-primary-color w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:scale-110 transition duration-300">
+                        <i class="fas fa-calendar-day text-3xl"></i> <!-- Changed Icon -->
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">Open Daily</h3>
+                    <p class="opacity-90">11:00 AM to 5:00 PM, every day</p>
+                </div>
+            </div>
+        </div>
+        <div class="wave bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-light"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-light">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary-color mb-6 fun-heading">Ready to Experience the Fun?</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-8">Visit Funtasia Water Park today and create unforgettable memories with friends and family!</p>
+             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="pricing.html" class="btn btn-primary">View Pricing & Timings</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer wave-container">
+         <div class="wave top">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-light"></path>
+             </svg>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                 <!-- About -->
+                 <div>
+                    <h3>About Funtasia</h3>
+                     <a href="../index.html" class="logo inline-block mb-4">
+                        <img src="../assets/images/funtasia-logo-white.png" alt="Funtasia Logo White" class="h-12">
+                     </a>
+                    <p class="text-gray-400 mb-4 text-sm">
+                       India's best resort & waterpark in Varanasi, offering a unique blend of hospitality & entertainment across 1.4 acres.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <!-- Open Hours -->
+                <div>
+                    <h3>Open Hours</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="far fa-clock w-5 text-center mr-2 text-accent-color"></i> Monday - Sunday</li>
+                        <li class="pl-7">11:00 AM - 5:00 PM</li>
+                         <li class="mt-2 pl-7 text-xs text-gray-500">*Open including weekends and holidays.</li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Near Kanudih Puliya, Ring Road Phase-I, Chandmari Lodhan, Varanasi-221003</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>8737857890, 8737587891</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>funtasiawaterpark@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                 <p>&copy; <span id="current-year"></span> All Rights Reserved by Funtasia Waterpark.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Structure (Hidden by default) -->
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></span>
+        <img src="" alt="Funtasia Gallery Image" class="lightbox-content">
+        <span class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></span>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

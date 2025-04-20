@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Funtasia Water Park</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet"> <!-- Link main stylesheet -->
+</head>
+<body>
+    <!-- Header -->
+     <header class="main-header">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="logo">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/cropped-logo-e1558266650570.png" alt="Funtasia Waterpark Logo">
+                </a>
+                <nav class="hidden md:flex space-x-6 desktop-nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="pricing.html" class="nav-link active">Pricing</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+     <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 shadow-lg z-50 p-5 md:hidden">
+        <div class="flex justify-between items-center mb-6">
+             <a href="../index.html" class="logo">
+                <img src="../assets/images/funtasia-logo-white.png" alt="Funtasia Logo White" class="h-10">
+             </a>
+            <button id="close-menu" class="text-white focus:outline-none">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-2">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="pricing.html" class="nav-link active">Pricing</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+    </div>
+
+    <!-- Banner -->
+    <section class="page-banner" style="background-image: url('https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131156-768x576.jpg');">
+        <div class="container mx-auto px-4">
+            <h1>Pricing & Timings</h1>
+            <p>Affordable fun for everyone, all week long!</p>
+        </div>
+         <div class="wave bottom">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-light"></path> <!-- Wave to light -->
+            </svg>
+        </div>
+    </section>
+
+     <!-- Important Notice -->
+    <section class="bg-red-600 text-white py-3 text-center">
+        <div class="container mx-auto px-4">
+            <p class="font-bold text-base md:text-lg"><i class="fas fa-exclamation-triangle mr-2"></i>OUTSIDE FOOD, ALCOHOL, DRINK, TOBACCO ARE NOT ALLOWED</p>
+        </div>
+    </section>
+
+
+    <!-- Pricing Section -->
+    <section class="section-padding bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title fun-heading">Our Pricing Plans</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Experience the thrill and excitement of Funtasia Water Park with our affordable pricing packages.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch"> <!-- items-stretch for equal height cards -->
+
+                <!-- Ticket Rates Card -->
+                <div class="content-card flex flex-col"> <!-- Flex column for structure -->
+                    <div class="bg-primary-color text-white p-5 rounded-t-lg flex items-center">
+                        <i class="fas fa-ticket-alt mr-3 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-white m-0">Ticket Rates</h3> <!-- Removed default h3 color -->
+                    </div>
+                    <div class="p-6 flex-grow"> <!-- flex-grow takes remaining space -->
+                         <div class="price-item flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="font-medium text-gray-700">Monday - Saturday</span>
+                            <span class="font-bold text-primary-color text-lg">₹500</span>
+                        </div>
+                        <div class="price-item flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="font-medium text-gray-700">Sunday & Holiday</span>
+                            <span class="font-bold text-primary-color text-lg">₹600</span>
+                        </div>
+                        <div class="price-item flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="font-medium text-gray-700">Child Below 3 Feet</span>
+                            <span class="font-bold text-green-600 text-lg">Free</span>
+                        </div>
+                         <div class="price-item flex justify-between items-center pt-3">
+                            <span class="font-medium text-gray-700">Child 3-4 Feet</span>
+                            <span class="font-bold text-orange-500 text-lg">₹200 Discount</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Costume Rates Card -->
+                 <div class="content-card flex flex-col">
+                    <div class="bg-secondary-color text-white p-5 rounded-t-lg flex items-center"> <!-- Use secondary color -->
+                        <i class="fas fa-tshirt mr-3 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-white m-0">Costume & Locker</h3>
+                    </div>
+                    <div class="p-6 flex-grow">
+                         <div class="price-item flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="font-medium text-gray-700">Costume (Male/Female)</span>
+                            <span class="font-bold text-primary-color text-lg">₹50</span>
+                        </div>
+                         <div class="price-item flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="font-medium text-gray-700">Locker Rent</span>
+                            <span class="font-bold text-primary-color text-lg">₹50</span>
+                        </div>
+                         <div class="price-item flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="font-medium text-gray-700">Security Deposit - Dress</span>
+                            <span class="font-bold text-primary-color text-lg">₹100</span>
+                        </div>
+                        <div class="price-item flex justify-between items-center pt-3">
+                            <span class="font-medium text-gray-700">Security Deposit - Locker</span>
+                            <span class="font-bold text-primary-color text-lg">₹100</span>
+                        </div>
+                         <p class="text-xs text-gray-500 mt-4">*Security deposit is refundable upon return of items.</p>
+                    </div>
+                </div>
+
+                <!-- Timings Card -->
+                 <div class="content-card lg:col-span-1 md:col-span-2 bg-gradient-to-br from-accent-color to-yellow-400 text-dark-color flex flex-col items-center justify-center p-8 text-center">
+                    <i class="far fa-clock text-6xl mb-5 text-primary-color"></i>
+                    <h3 class="text-2xl font-bold mb-3 text-primary-color">Park Timings</h3>
+                    <p class="text-3xl font-bold mb-2">11:00 AM – 5:00 PM</p>
+                    <p class="text-lg font-medium">Open All Days of the Week</p>
+                    <p class="text-sm mt-2">(Including Weekends & Holidays)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Booking Section -->
+    <section class="section-padding wave-container pb-16 md:pb-20 lg:pb-24">
+         <div class="wave top">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill-light"></path>
+             </svg>
+        </div>
+        <div class="container mx-auto px-4 pt-16 md:pt-20 lg:pt-24 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="section-title fun-heading">Group Bookings & Events</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Planning an event or a group outing? Funtasia Water Park is the perfect venue for memorable celebrations!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="content-card p-6 md:p-8">
+                    <h3 class="text-2xl font-bold mb-5 text-primary-color">Perfect For All Occasions:</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-birthday-cake text-green-500 mt-1 mr-3 fa-fw"></i> <!-- Changed icon -->
+                            <span class="text-gray-700">Birthday Parties</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-users text-green-500 mt-1 mr-3 fa-fw"></i> <!-- Changed icon -->
+                            <span class="text-gray-700">Family Get Togethers</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-school text-green-500 mt-1 mr-3 fa-fw"></i> <!-- Changed icon -->
+                            <span class="text-gray-700">School Outings</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-graduation-cap text-green-500 mt-1 mr-3 fa-fw"></i> <!-- Changed icon -->
+                            <span class="text-gray-700">College Reunions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-briefcase text-green-500 mt-1 mr-3 fa-fw"></i> <!-- Changed icon -->
+                            <span class="text-gray-700">Corporate Meetings & Events</span>
+                        </li>
+                    </ul>
+                     <p class="mt-4 text-sm text-gray-500">Make your next event a splash!</p>
+                </div>
+                <div class="content-card p-6 md:p-8 bg-blue-50"> <!-- Light blue background -->
+                    <h3 class="text-2xl font-bold mb-4 text-primary-color">Special Group Offers</h3>
+                    <p class="text-gray-700 mb-4">We offer special discounted rates for group bookings. The larger the group, the bigger the potential savings!</p>
+                    <p class="text-gray-700 mb-6">Contact our dedicated team today to discuss custom packages tailored to your event requirements and budget.</p>
+                    <div class="text-center">
+                        <a href="contact.html" class="btn btn-primary">Contact For Group Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="wave bottom">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-white"></path>
+             </svg>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="main-footer wave-container">
+         <div class="wave top">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-white"></path>
+             </svg>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3>About Funtasia</h3>
+                     <a href="../index.html" class="logo inline-block mb-4">
+                        <img src="../assets/images/funtasia-logo-white.png" alt="Funtasia Logo White" class="h-12">
+                     </a>
+                    <p class="text-gray-400 mb-4 text-sm">
+                       India's best resort & waterpark in Varanasi, offering a unique blend of hospitality & entertainment across 1.4 acres.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <!-- Open Hours -->
+                <div>
+                    <h3>Open Hours</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="far fa-clock w-5 text-center mr-2 text-accent-color"></i> Monday - Sunday</li>
+                        <li class="pl-7">11:00 AM - 5:00 PM</li>
+                         <li class="mt-2 pl-7 text-xs text-gray-500">*Open including weekends and holidays.</li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Near Kanudih Puliya, Ring Road Phase-I, Chandmari Lodhan, Varanasi-221003</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>8737857890, 8737587891</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>funtasiawaterpark@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             <div class="footer-bottom">
+                 <p>&copy; <span id="current-year"></span> All Rights Reserved by Funtasia Waterpark.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+     <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

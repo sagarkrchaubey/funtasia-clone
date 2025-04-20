@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funtasia Water Park - Water Theme Park in Varanasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet"> <!-- Link main stylesheet -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="logo">
+                    <!-- Use color logo for light header background -->
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/cropped-logo-e1558266650570.png" alt="Funtasia Waterpark Logo">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-6 desktop-nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="pages/about.html" class="nav-link">About Us</a>
+                    <a href="pages/gallery.html" class="nav-link">Gallery</a>
+                    <a href="pages/pricing.html" class="nav-link">Pricing</a>
+                    <a href="pages/contact.html" class="nav-link">Contact Us</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 shadow-lg z-50 p-5 md:hidden">
+        <div class="flex justify-between items-center mb-6">
+             <a href="index.html" class="logo">
+                 <!-- Use white logo for dark mobile menu background -->
+                <img src="assets/images/funtasia-logo-white.png" alt="Funtasia Logo White" class="h-10">
+             </a>
+            <button id="close-menu" class="text-white focus:outline-none">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-2">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="pages/about.html" class="nav-link">About Us</a>
+            <a href="pages/gallery.html" class="nav-link">Gallery</a>
+            <a href="pages/pricing.html" class="nav-link">Pricing</a>
+            <a href="pages/contact.html" class="nav-link">Contact Us</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-banner" style="background-image: url('https://funtasiawaterpark.com/wp-content/uploads/2024/03/IMG-20240327-WA0049-1024x768.jpg');">
+        <div class="container mx-auto px-4 h-full flex items-center justify-center">
+            <div class="hero-content text-center w-full">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Splash into Adventure!</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">India's best resort & waterpark in Varanasi for family fun and excitement</p>
+                <a href="pages/pricing.html" class="btn btn-primary text-lg shadow-xl">View Our Pricing</a>
+            </div>
+        </div>
+         <!-- Bottom Wave -->
+        <div class="wave bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-white"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                 <h2 class="section-title">Welcome to Funtasia</h2>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-8 lg:gap-12 mt-8">
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Funtasia Water Park is a Water Theme Park located in Varanasi. It is India's best resort & waterpark which is spread across an area of 1.4 acres of land situated at Chandmari Lodhan, Varanasi- 221003.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        It's a unique blend of Indian Hospitality & entertainment which offers a sense of privacy & peace, the ideal escape in calm countryside from the pressures of a busy schedule. Funtasia Water Park is coolest Water Park. The Facility boasts of 4 pools, a variety of slides, flumes and other interesting features.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        There is something to do for all ages, the mild and strong of heart. Rediscover the child in you as you hurtle down the slides.
+                    </p>
+                    <div class="mt-8">
+                        <a href="pages/about.html" class="btn btn-secondary">Learn More About Us</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <div class="relative rounded-xl overflow-hidden shadow-xl">
+                        <img src="https://funtasiawaterpark.com/wp-content/uploads/2024/03/IMG-20240327-WA0049-1024x768.jpg" alt="Funtasia Waterpark Fun" class="w-full h-auto">
+                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/70 to-transparent p-4 md:p-6">
+                            <p class="text-white text-sm md:text-base font-semibold text-shadow">Experience the thrill of our slides!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Wave Divider -->
+    <div class="wave-container bg-light relative pb-16 md:pb-20 lg:pb-24"> <!-- Add padding bottom to contain the wave -->
+        <div class="wave top">
+           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill-white"></path>
+            </svg>
+        </div>
+
+        <!-- Features Section -->
+        <section class="section-padding pt-16 md:pt-20 lg:pt-24"> <!-- Adjust top padding -->
+            <div class="container mx-auto px-4">
+                <div class="text-center">
+                    <h2 class="section-title fun-heading">Our Amazing Features</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <!-- Feature Card 1 -->
+                    <div class="content-card text-center p-6">
+                        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-primary-color">
+                            <i class="fas fa-swimming-pool text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Multiple Pools</h3>
+                        <p class="text-gray-600">The facility boasts 4 pools with different depths and features for all age groups.</p>
+                    </div>
+                    <!-- Feature Card 2 -->
+                    <div class="content-card text-center p-6">
+                         <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-primary-color">
+                            <i class="fas fa-water text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Thrilling Slides</h3>
+                        <p class="text-gray-600">Enjoy a variety of exciting water slides and flumes for all levels of adventure seekers.</p>
+                    </div>
+                     <!-- Feature Card 3 -->
+                    <div class="content-card text-center p-6">
+                         <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-primary-color">
+                           <i class="fas fa-umbrella-beach text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Family Fun</h3>
+                        <p class="text-gray-600">A perfect place for family gatherings, birthday parties, and corporate events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Bottom Wave -->
+        <div class="wave bottom">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-white"></path>
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- Gallery Preview Section -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h2 class="section-title fun-heading">Glimpse of Funtasia</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                 <div class="content-card">
+                    <div class="image-container">
+                        <img src="https://funtasiawaterpark.com/wp-content/uploads/2024/03/IMG-20240327-WA0049-1024x768.jpg" alt="Waterpark Overview">
+                    </div>
+                </div>
+                 <div class="content-card">
+                    <div class="image-container">
+                        <img src="https://funtasiawaterpark.com/wp-content/uploads/2022/02/t2.jpeg" alt="Waterpark Slides">
+                    </div>
+                </div>
+                 <div class="content-card">
+                    <div class="image-container">
+                        <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131037-768x576.jpg" alt="Kids Area Fun">
+                    </div>
+                </div>
+                 </div>
+            <div class="text-center mt-12">
+                <a href="pages/gallery.html" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Timings Teaser -->
+    <section class="section-padding bg-light wave-container pb-16 md:pb-20 lg:pb-24">
+         <div class="wave top">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill-white"></path>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 pt-16 md:pt-20 lg:pt-24">
+            <div class="text-center">
+                <h2 class="section-title fun-heading">Plan Your Visit</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 items-stretch"> <!-- items-stretch for equal height -->
+                 <!-- Pricing Card Teaser -->
+                <div class="content-card p-6 md:p-8 flex flex-col justify-between">
+                     <div>
+                         <h3 class="text-2xl font-bold mb-4 text-primary-color">Affordable Fun</h3>
+                         <p class="text-gray-600 mb-2">Starting from just <strong class="text-green-600">₹500</strong> (Mon-Sat)</p>
+                         <p class="text-gray-600 mb-4">Special rates for Sundays, Holidays, and Children.</p>
+                         <ul class="space-y-2 text-sm text-gray-500 mb-6">
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Costume & Locker rentals available</li>
+                            <li><i class="fas fa-child text-blue-500 mr-2"></i>Free entry for children below 3 feet</li>
+                         </ul>
+                    </div>
+                     <div class="mt-auto text-center"> <!-- mt-auto pushes button to bottom -->
+                        <a href="pages/pricing.html" class="btn btn-secondary w-full md:w-auto">See All Pricing Details</a>
+                    </div>
+                </div>
+
+                <!-- Timings Card Teaser -->
+                <div class="content-card p-6 md:p-8 text-center bg-gradient-to-br from-primary-color to-secondary-color text-white flex flex-col justify-center items-center">
+                     <i class="far fa-clock text-5xl mb-4 text-accent-color"></i>
+                    <h3 class="text-3xl font-bold mb-2 text-white">Park Timings</h3>
+                    <p class="text-2xl font-semibold mb-4">11:00 AM – 5:00 PM</p>
+                    <p class="text-lg opacity-90">Open All Days of the Week!</p>
+                     <p class="mt-4 text-xs text-yellow-200 font-semibold">*Including weekends and holidays</p>
+                </div>
+            </div>
+        </div>
+        <div class="wave bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-white"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Contact & Location Teaser -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h2 class="section-title fun-heading">Find Us & Get In Touch</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Map -->
+                <div class="content-card p-0"> <!-- No padding on card itself -->
+                    <div class="h-80 md:h-full">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.2084608781236!2d82.9424423!3d25.2853694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e33b2c4cdcaa5%3A0x8e71cf5e9b3e1e72!2sFuntasia%20Water%20Park!5e0!3m2!1sen!2sin!4v1653382625674!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-t-lg md:rounded-l-lg md:rounded-t-none"></iframe>
+                    </div>
+                </div>
+                 <!-- Contact Info -->
+                <div class="content-card p-6 md:p-8">
+                    <h3 class="text-2xl font-bold mb-4 text-primary-color">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary-color w-5 text-center mt-1 mr-3"></i>
+                            <p class="text-gray-700">Near Kanudih Puliya, Ring Road Phase-I, Chandmari Lodhan, Varanasi-221003</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt text-primary-color w-5 text-center mr-3"></i>
+                            <p class="text-gray-700">8737857890, 8737587891</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary-color w-5 text-center mr-3"></i>
+                            <p class="text-gray-700">funtasiawaterpark@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center md:text-left">
+                         <a href="pages/contact.html" class="btn btn-primary">Send Us a Message</a>
+                    </div>
+                     <div class="mt-6 bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-md" role="alert">
+                         <p class="font-bold">Important!</p>
+                         <p>Outside food, drinks, alcohol, and tobacco are strictly prohibited.</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="main-footer wave-container">
+         <div class="wave top">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-white"></path>
+             </svg>
+        </div>
+        <div class="container mx-auto px-4 relative z-10"> <!-- Ensure content is above wave -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3>About Funtasia</h3>
+                     <a href="index.html" class="logo inline-block mb-4">
+                        <img src="assets/images/funtasia-logo-white.png" alt="Funtasia Logo White" class="h-12">
+                     </a>
+                    <p class="text-gray-400 mb-4 text-sm">
+                       India's best resort & waterpark in Varanasi, offering a unique blend of hospitality & entertainment across 1.4 acres.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="pages/about.html" class="footer-link">About Us</a></li>
+                        <li><a href="pages/gallery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="pages/pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="pages/contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                 <!-- Open Hours -->
+                <div>
+                    <h3>Open Hours</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="far fa-clock w-5 text-center mr-2 text-accent-color"></i> Monday - Sunday</li>
+                        <li class="pl-7">11:00 AM - 5:00 PM</li>
+                         <li class="mt-2 pl-7 text-xs text-gray-500">*Open including weekends and holidays.</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Near Kanudih Puliya, Ring Road Phase-I, Chandmari Lodhan, Varanasi-221003</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>8737857890, 8737587891</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>funtasiawaterpark@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> All Rights Reserved by Funtasia Waterpark.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

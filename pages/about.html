@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Funtasia Water Park</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet"> <!-- Link main stylesheet -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="logo">
+                    <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/cropped-logo-e1558266650570.png" alt="Funtasia Waterpark Logo">
+                </a>
+                <nav class="hidden md:flex space-x-6 desktop-nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link active">About Us</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+     <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 shadow-lg z-50 p-5 md:hidden">
+        <div class="flex justify-between items-center mb-6">
+             <a href="../index.html" class="logo">
+                <img src="../assets/images/funtasia-logo-white.png" alt="Funtasia Logo White" class="h-10">
+             </a>
+            <button id="close-menu" class="text-white focus:outline-none">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-2">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About Us</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+    </div>
+
+    <!-- Banner -->
+    <section class="page-banner" style="background-image: url('https://funtasiawaterpark.com/wp-content/uploads/2024/03/IMG-20240327-WA0049-1024x768.jpg');">
+         <div class="container mx-auto px-4">
+            <h1>About Us</h1>
+            <p>Discover the ultimate water adventure at Varanasi's premier water theme park</p>
+        </div>
+         <div class="wave bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-white"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Introduction -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8 lg:gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-primary-color fun-heading">Welcome to Funtasia Water Park</h2>
+                    <p class="text-lg mb-6">Funtasia Water Park is a Water Theme Park located in Varanasi. It is India's best resort & waterpark which is spread across an area of 1.4 acres of land situated at Chandmari Lodhan, Varanasi- 221003.</p>
+                    <p class="text-lg mb-6">It's a unique blend of Indian Hospitality & entertainment which offers a sense of privacy & peace, the ideal escape in calm countryside from the pressures of a busy schedule.</p>
+                    <p class="text-lg">Funtasia Water Park is coolest Water Park. The Facility boasts of 4 pools, a variety of slides, flumes and other interesting features. There is something to do for all ages, the mild and strong of heart.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="content-card p-0"> <!-- No padding on card for full image -->
+                        <div class="relative image-container h-auto"> <!-- Adjust height as needed -->
+                             <img src="https://funtasiawaterpark.com/wp-content/uploads/2024/03/IMG-20240327-WA0049-1024x768.jpg" alt="Funtasia Water Park Splash" class="w-full h-auto">
+                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/60 to-transparent p-6">
+                                <h3 class="text-white text-xl font-bold fun-heading">Rediscover the child in you</h3>
+                                <p class="text-white opacity-90">as you hurtle down the slides!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section-padding bg-gradient-to-br from-primary-color to-secondary-color text-white stats-section wave-container pb-16 md:pb-20 lg:pb-24">
+         <div class="wave top">
+           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill-white"></path>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 relative z-10 pt-16 md:pt-20 lg:pt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 fun-heading">Our Success in Numbers</h2>
+                <p class="text-xl text-white opacity-80 max-w-xl mx-auto">Bringing happiness to thousands of visitors</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Counter Box 1 -->
+                <div class="text-center p-6 rounded-lg bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm shadow-lg hover:bg-opacity-20 transition duration-300">
+                    <div class="counter-value text-4xl font-bold mb-2 text-accent-color" data-target="4">0</div>
+                    <div class="text-xl font-medium">Swimming Pools</div>
+                </div>
+                 <!-- Counter Box 2 -->
+                <div class="text-center p-6 rounded-lg bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm shadow-lg hover:bg-opacity-20 transition duration-300">
+                    <div class="counter-value text-4xl font-bold mb-2 text-accent-color" data-target="12" data-suffix="+">0+</div>
+                    <div class="text-xl font-medium">Exciting Slides</div>
+                </div>
+                 <!-- Counter Box 3 -->
+                <div class="text-center p-6 rounded-lg bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm shadow-lg hover:bg-opacity-20 transition duration-300">
+                    <div class="counter-value text-4xl font-bold mb-2 text-accent-color" data-target="50000" data-suffix="+">0+</div>
+                    <div class="text-xl font-medium">Happy Visitors</div>
+                </div>
+                <!-- Counter Box 4 -->
+                <div class="text-center p-6 rounded-lg bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm shadow-lg hover:bg-opacity-20 transition duration-300">
+                    <div class="counter-value text-4xl font-bold mb-2 text-accent-color" data-target="1.4">0.0</div>
+                    <div class="text-xl font-medium">Acres Land Area</div>
+                </div>
+            </div>
+        </div>
+        <div class="wave bottom">
+           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-white"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title fun-heading">Our Exciting Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">There is something to do for all ages, from the toddler to the old, from the mild to the strong of heart!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="content-card">
+                    <div class="image-container">
+                        <img src="https://funtasiawaterpark.com/wp-content/uploads/2024/03/IMG-20240327-WA0049-1024x768.jpg" alt="Water Slides">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-water text-primary-color text-2xl mr-3 fa-fw"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Thrilling Water Slides</h3>
+                        </div>
+                        <p class="text-gray-700">Experience the adrenaline rush on our variety of thrilling water slides. From steep drops to twisting tunnels, our slides cater to all excitement levels.</p>
+                    </div>
+                </div>
+                 <!-- Feature Card 2 -->
+                 <div class="content-card">
+                    <div class="image-container">
+                        <img src="https://funtasiawaterpark.com/wp-content/uploads/2022/02/t3.jpeg" alt="Swimming Pools">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-swimming-pool text-primary-color text-2xl mr-3 fa-fw"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Four Swimming Pools</h3>
+                        </div>
+                        <p class="text-gray-700">Enjoy our four different swimming pools designed for various age groups and swimming abilities. From kids' pools to deeper pools for adults.</p>
+                    </div>
+                </div>
+                 <!-- Feature Card 3 -->
+                 <div class="content-card">
+                    <div class="image-container">
+                        <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131125-768x576.jpg" alt="Fun Flumes">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-tint text-primary-color text-2xl mr-3 fa-fw"></i> <!-- Changed icon -->
+                            <h3 class="text-xl font-bold text-gray-800">Fun Flumes</h3>
+                        </div>
+                        <p class="text-gray-700">Our specially designed flumes offer a more gentle water experience, perfect for those who prefer a relaxed ride through flowing water.</p>
+                    </div>
+                </div>
+                 <!-- Feature Card 4 -->
+                 <div class="content-card">
+                    <div class="image-container">
+                        <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131037-768x576.jpg" alt="Kids Play Area">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-child text-primary-color text-2xl mr-3 fa-fw"></i> <!-- Changed icon -->
+                            <h3 class="text-xl font-bold text-gray-800">Kids Play Area</h3>
+                        </div>
+                        <p class="text-gray-700">A dedicated area for the little ones with safe, shallow water features, mini slides, and interactive water play equipment.</p>
+                    </div>
+                </div>
+                 <!-- Feature Card 5 -->
+                 <div class="content-card">
+                    <div class="image-container">
+                        <img src="https://funtasiawaterpark.com/wp-content/uploads/2019/05/IMG_20190501_131349-768x576.jpg" alt="Event Spaces">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-calendar-alt text-primary-color text-2xl mr-3 fa-fw"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Event Spaces</h3>
+                        </div>
+                        <p class="text-gray-700">Perfect for birthdays, family gatherings, corporate outings, and school trips. Contact us for group bookings and packages.</p>
+                    </div>
+                </div>
+                 <!-- Feature Card 6 -->
+                 <div class="content-card">
+                    <div class="image-container">
+                         <img src="https://via.placeholder.com/400x250/00b4ff/ffffff?text=Food+Court" alt="Food Court"> <!-- Placeholder -->
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-utensils text-primary-color text-2xl mr-3 fa-fw"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Food & Refreshments</h3>
+                        </div>
+                        <p class="text-gray-700">Enjoy a variety of tasty food options and refreshing beverages at our food court to refuel after all the water adventures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding bg-light wave-container pb-16 md:pb-20 lg:pb-24">
+         <div class="wave top">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill-white"></path>
+             </svg>
+        </div>
+        <div class="container mx-auto px-4 pt-16 md:pt-20 lg:pt-24 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="section-title fun-heading">Why Choose Funtasia?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience the perfect blend of fun, safety, and comfort at Varanasi's premier water park destination</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+                <!-- Reason 1 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-color text-white flex items-center justify-center text-xl mr-5 mt-1">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Safety First</h3>
+                        <p class="text-gray-700">Your safety is our priority. All our rides and pools are continuously monitored by trained lifeguards. We maintain strict water quality standards and regularly inspect all equipment.</p>
+                    </div>
+                </div>
+                 <!-- Reason 2 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-color text-white flex items-center justify-center text-xl mr-5 mt-1">
+                        <i class="fas fa-smile-beam"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Fun For Everyone</h3>
+                        <p class="text-gray-700">From the toddler to the old, from the rural to the urban, Funtasia has attractions for all age groups and preferences. No one feels left out here!</p>
+                    </div>
+                </div>
+                 <!-- Reason 3 -->
+                 <div class="flex items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-color text-white flex items-center justify-center text-xl mr-5 mt-1">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Cleanliness & Hygiene</h3>
+                        <p class="text-gray-700">We maintain the highest standards of cleanliness throughout the park. Our pools are treated regularly, and all areas are sanitized frequently.</p>
+                    </div>
+                </div>
+                 <!-- Reason 4 -->
+                 <div class="flex items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-color text-white flex items-center justify-center text-xl mr-5 mt-1">
+                        <i class="fas fa-map-marker-alt"></i> <!-- Changed icon -->
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Convenient Location</h3>
+                        <p class="text-gray-700">Located at Chandmari Lodhan, Ring Road Phase-I, near Kanudih Puliya, Varanasi, we're easily accessible while offering a peaceful environment away from the city's hustle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="wave bottom">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-white"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-accent-color via-yellow-400 to-yellow-300 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-dark-color fun-heading">Ready for an Unforgettable Water Adventure?</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto text-dark-color opacity-90">Visit Funtasia Water Park for a day full of thrills, fun, and memories. We're open daily from 11:00 AM to 5:00 PM.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="pricing.html" class="btn bg-primary-color text-white hover:bg-dark-color border-primary-color hover:border-dark-color">View Pricing</a>
+                <a href="contact.html" class="btn border-2 border-dark-color text-dark-color hover:bg-dark-color hover:text-white">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="main-footer wave-container">
+         <div class="wave top">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-yellow-300"></path> <!-- Match CTA bg -->
+             </svg>
+        </div>
+        <div class="container mx-auto px-4 relative z-10"> <!-- Ensure content is above wave -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3>About Funtasia</h3>
+                     <a href="../index.html" class="logo inline-block mb-4">
+                        <img src="../assets/images/funtasia-logo-white.png" alt="Funtasia Logo White" class="h-12">
+                     </a>
+                    <p class="text-gray-400 mb-4 text-sm">
+                       India's best resort & waterpark in Varanasi, offering a unique blend of hospitality & entertainment across 1.4 acres.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <!-- Open Hours -->
+                <div>
+                    <h3>Open Hours</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="far fa-clock w-5 text-center mr-2 text-accent-color"></i> Monday - Sunday</li>
+                        <li class="pl-7">11:00 AM - 5:00 PM</li>
+                         <li class="mt-2 pl-7 text-xs text-gray-500">*Open including weekends and holidays.</li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Near Kanudih Puliya, Ring Road Phase-I, Chandmari Lodhan, Varanasi-221003</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>8737857890, 8737587891</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>funtasiawaterpark@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> All Rights Reserved by Funtasia Waterpark.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+     <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
